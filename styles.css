@@ -107,6 +107,11 @@ header{
     gap: 10em;
     /*padding: 30px 12% 0;*/
     justify-content: space-around;
+    overflow-x: scroll;
+}
+.home::-webkit-scrollbar{
+    width: 0;
+    height: 0;
 }
 .home-content{
     max-width: 500px;
@@ -147,6 +152,12 @@ header{
     /*padding: 30px 12% 0;*/
     justify-content: space-around;
     background-color: #D8B597;
+    overflow-x: scroll;
+    
+}
+.home2::-webkit-scrollbar{
+    width: 0;
+    height: 0;
 }
 .home2-content{
     max-width: 500px;
@@ -471,6 +482,11 @@ header{
     justify-content: center;
     margin-top: 20px;
 }
+.blank{
+    display: none;
+    height: 55px;
+    width: 100%;
+}
 @media(max-width: 760px){
     .hamburger{
         display: block;
@@ -504,6 +520,7 @@ header{
     }
     .nav-item{
         margin: 16px 0; 
+        display: flex;
     }
     .img-box{
         margin-top: 20px;
@@ -536,6 +553,11 @@ header{
         color: #A8E6CF;
         text-shadow: 0 0 25px #E07A5F,
                      0 0 25px #E07A5F;
+    }
+    .blank{
+        display: block;
+        background-color: #4e342e9b;
+        
     }
 }
 .tgh{
