@@ -11,6 +11,41 @@
 html{
     scroll-behavior: smooth;
 }
+:root{
+    --hue: 188;
+    --first-color: hsl(var(--hue), 53.8%, 31.4%);
+    --first-color-alt: hsl(var(--hue), 80%, 56%);
+    --first-color-alt-2: hsl(var(--hue), 60%, 56%);
+    --first-color-light: hsl(var(--hue), 60%, 35%);
+}
+.cursor{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  background-color: var(--first-color-light);
+  border-radius: 50px;
+  box-shadow: 0 0 30px var(--first-color);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transition: transform .2s ease-out,
+              left .2s ease-out,
+              top .2s ease-out,
+              width .3s,
+              height .3s;
+
+}
+.hide-cursor{
+  width: 0;
+  height: 0;
+}
+@media (pointer: coarse){
+  .cursor{
+    display: none;
+  }
+}
 .body1{
     width: 100%;
     background-color: #fff8e7d3;
