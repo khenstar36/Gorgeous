@@ -138,6 +138,7 @@ header{
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex: wrap;
     align-items: center;
     gap: 10em;
     /*padding: 30px 12% 0;*/
